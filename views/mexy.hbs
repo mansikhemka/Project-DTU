@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>MECH-C</title>
+    <style media="screen" type="text/css">
+        .a1{
+            height: 300px;
+            padding-top: 100px;
+            align-items: center;
+            background-image: url("/images/mexwall.jpg");
+            /*justify-content: center;*/
+            z-index: -1;
+            position: relative;
+        }
+
+
+        .a11{
+
+            width: 129.4px;
+            height: 94.40px;
+            padding-left: 16.2px;
+            padding-top: 50px;
+            background-color: lightsalmon;
+            color: brown;
+            font-family: monospace;
+            font-size: 20px;
+            justify-content: center;
+            box-shadow: 2px 3px 3px 2px green;
+            border-radius: 100%;
+            position: relative;
+            margin-left: 558.6px;
+        }
+        .meni{
+            background-color: ivory;
+            height: 370px;
+            font-family: monospace;
+        }
+        h1{
+            margin-left: 573.6px;
+        }
+        .miki{
+            margin-left: 318px;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        a{
+            color: #a52a2a;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<div class="a1">
+    <div class="a11" >
+
+      <a href="http://localhost:4040/"> MECHANICAL CANTEEN</a>
+
+    </div>
+</div>
+<div class="meni">
+    <h1>MENU</h1>
+    <div class="miki">
+        <ul>
+            {{#each mexy}}
+                <li>{{dish}}............................................{{cost}}</li>
+                <pre>
+
+                </pre>
+            {{/each}}
+
+        </ul>
+
+
+    </div>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!--<html>-->
+<!--<head>-->
+    <!--<script src="/js/jquery.js"></script>-->
+    <!--<style type="text/css" media="screen">-->
+      <!--body{-->
+          <!--background-image: ;-->
+      <!--}-->
+
+    <!--</style>-->
+<!--</head>-->
+<!--<body>-->
+<!--<table border="1">-->
+    <!--{{#each dtufood}}-->
+        <!--<tr>-->
+            <!--<td>{{place}}</td>-->
+            <!--<td>{{desc}}</td>-->
+            <!--<td>{{path}}</td>-->
+        <!--</tr>-->
+    <!--{{/each}}-->
+<!--</table>-->
+
+
+
+
+
+<!--</body>-->
+<!--</html>-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>DTU FOOD HUB</title>
+    <style media="screen" src="text/css">
+        body{
+            height: 1200px;
+        }
+        .block{
+            width:416.3px;
+            height: 400px;
+            float: left;
+
+        }
+
+
+
+        #d1, #d5, #d9{
+            background-color: black;
+            font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+            font-size: 40px;
+            text-shadow: 0.5px 1px deeppink;
+            color: lightgray;
+        }
+        p{
+            opacity: 0.751217;
+           margin-left: 100px;
+            margin-top: 100px;
+        }
+        a{
+            color: coral;
+            text-decoration: none;
+            font-weight: bold;
+            -webkit-animation-name: dtuanimate;
+            -webkit-animation-duration:3s;
+            -webkit-animation-iteration-count: infinite;
+
+        }
+        @-webkit-keyframes dtuanimate{
+            0%{color:coral;}
+            20%{color: aquamarine;}
+            40%{color: darkorange;}
+            60%{color: yellowgreen;}
+            80%{color: tomato;}
+            100%{color: deeppink;}
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class= "block" id=d1>
+        <p>
+
+        {{#with dtufood}}
+          {{0.place}}
+        <br>
+          {{0.desc}}
+        <br>
+            <a href="http://localhost:4040{{0.path}}">{{0.path}}</a>
+        {{/with}}
+        </p>
+    </div>
+
+    <div class= "block" id=d2 >
+        <img src="/images/honey-chilli-potatoes-recipe.jpg" width=100% height="400px" />
+    </div>
+    <div class= "block" id=d3>
+        <img src="/images/dosa-1.jpg" width=100% height="450px"/>
+    </div>
+    <div class= "block" id=d4>
+        <img src="/images/Sawada-Coffee-10DEC2015-003.jpg" width=100% height="400px"/>
+    </div>
+    <div class= "block" id=d5>
+<p>
+             {{#with dtufood}}
+                 {{1.place}}
+             <br>
+                 {{1.desc}}
+             <br>
+             <a href="http://localhost:4040{{1.path}}">{{1.path}}</a>
+             {{/with}}
+</p>
+    </div>
+
+    <div class= "block" id=d6>
+        <img src="/images/Chocolate-Truffle-Cake.jpg" width=100% height="400px"/>
+    </div>
+    <div class= "block" id=d7>
+        <img src="/images/rajma.jpg" width=100% height="400px"/>
+    </div>
+    <div class= "block" id=d8>
+        <img src="/images/paneer.jpg" width=100% height="400px"/>
+    </div>
+    <div class= "block" id=d9>
+<p>
+            {{#with dtufood}}
+                {{2.place}}
+            <br>
+                {{2.desc}}
+            <br>
+            <a href="http://localhost:4040{{2.path}}">{{2.path}}</a>
+            {{/with}}
+        </p>
+    </div>
+
+</body>
+</html>

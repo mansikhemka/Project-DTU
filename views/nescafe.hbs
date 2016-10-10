@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>NESCAFE</title>
+    <script src="/Users/mansikhemka/WebstormProjects/dtu/jquery-3.1.1.js"></script>
+    <!--<script src="/Users/mansikhemka/WebstormProjects/dtu/public/js/mainnes.js"></script>-->
+    <script type="text/javascript">
+        function showDiv(toggle){
+            document.getElementById(toggle).style.display = 'block';
+        }
+    </script>
+    <style media="screen" type="text/css">
+       body{
+           height:700px;
+           background-image: url("/images/stock-vector-portrait-of-beautiful-young-woman-drinking-coffee-in-restaurant-269460431.jpg");
+
+           /*background: linear-gradient(mediumvioletred, lightpink, mediumvioletred);*/
+           background-repeat: no-repeat;
+           background-size: cover;
+
+       }
+        .b1{
+            width: 400px;
+            height: 132.5px;
+            margin-left: 447.3px;
+            margin-top: 127px;
+            font-size: 45px;
+            font-family: cursive;
+            border-radius: 5% 10%;
+            background-color: purple;
+            color: whitesmoke;
+            box-shad
+        }
+       .hide{
+           margin-top: 70px;
+           height: 370px;
+           font-family: monospace;
+           /*display: none;*/
+           color: rebeccapurple;
+           /*text-shadow: 3px 3px black;*/
+
+       }
+       h1{
+           margin-left: 573.6px;
+       }
+       .miki{
+           margin-left: 298px;
+           /*font-weight: bold;*/
+           /*font-size: 23px;*/
+           font-family: "Brush Script MT", cursive;
+           font-size: 24px;
+           font-style: normal;
+           font-variant: normal;
+           font-weight: 500;
+           line-height: 26.4px;
+       }
+        .b1:focus{outline:none;}
+    </style>
+</head>
+<body>
+
+      <input type="button" class="b1" name="answer" onclick="showDiv('toggle')" value="NESCAFE" />
+      <div class="hide" id="toggle" style="display:none">
+          <h1>MENU</h1>
+          <div class="miki">
+              <ul>
+                  {{#each menu}}
+                      <li>{{dish}}................................................................{{cost}}</li>
+                      <pre>
+
+                </pre>
+                  {{/each}}
+
+              </ul>
+
+
+          </div>
+</body>
+</html>
